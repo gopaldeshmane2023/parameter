@@ -20,6 +20,6 @@ jobs:
           subscriptionId: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
           template: "./registry.json"
           ResourceGroupName: "my-resource"
-          registryName: "testreg45"
-          parameters: "./para.json" 
+          #registryName: "testreg45"
+          parameters: ./para.json registryName=testreg45
           deploymentName: "Mrr78soft"
