@@ -21,13 +21,6 @@
                 "name": "Standard",
                 "tier": "Standard"
             },
-            {
-      "type": "Microsoft.Resources/resourceGroups",
-      "apiVersion": "2019-10-01",
-      "name": "[parameters('resourceGroupName')]",
-      "location": "[parameters('location')]",
-      "properties": {}
-    },
             "properties": {
                 "adminUserEnabled": true,
                 "policies": {
