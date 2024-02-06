@@ -1,8 +1,8 @@
 name: Create Azure Container Registry with ARM Template
 
-# on:
-  # push:
-   # branches: [ main ]  # Trigger on pushes to the main branch
+on:
+   push:
+    branches: [ main ]  # Trigger on pushes to the main branch
 
 jobs:
   create-acr:
