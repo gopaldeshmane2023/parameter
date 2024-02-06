@@ -13,9 +13,7 @@
             "apiVersion": "2023-11-01-preview",
             "name": "[parameters('registries_Mrr78soft_name')]",
             "location": "centralus",
-            "tags": {
-                "Znode10-SDK": "Znode10-SDK"
-            },
+            
             "sku": {
                 "name": "Standard",
                 "tier": "Standard"
