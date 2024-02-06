@@ -7,10 +7,7 @@
         }
       "ResourceGroupName": {
         "value": "my-resource"
-      },
-      "location": {
-      "value": "Central US"
-    }
+      }
   
     }
 }
