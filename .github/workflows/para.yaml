@@ -21,5 +21,5 @@ jobs:
           template: "./registry.json"
           ResourceGroupName: "my-resource"
           parameters: "./para.json" 
-          registryName: "testreg45"
+          registryName: registryName=${{ inputs.tenantName }}
           deploymentName: "Mrr78soft"
