@@ -25,3 +25,11 @@
         }
     }
 }
+
+ "resources": [
+        {
+            "name": "[parameters('registryName')]"
+        }  
+   ],
+    "outputs": {}
+}
