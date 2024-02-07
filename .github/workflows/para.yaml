@@ -22,4 +22,3 @@ jobs:
           ResourceGroupName: "my-resource"
           #registryName: "testreg45"
           parameters: ./para.json registryName=testreg45
-          deploymentName: "Mrr78soft"
