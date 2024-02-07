@@ -4,7 +4,7 @@
     "parameters": { 
        
         "registryName": {
-            "value": "${{ github.event.inputs.registryName }}"
+            "value": "${{ github.event.inputs.acrName }}"
         },
         "registryLocation": {
             "value": "centralus"
