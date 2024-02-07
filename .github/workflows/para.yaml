@@ -18,7 +18,5 @@ jobs:
         uses: azure/arm-deploy@v1.0.9
         with:
           subscriptionId: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
-          template: "./registry.json"
+          template: "./regpara.json"
           ResourceGroupName: "my-resource"
-          #registryName: "testreg45"
-          parameters: ./para.json registryName=testreg45
