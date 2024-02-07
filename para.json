@@ -30,6 +30,13 @@
  "resources": [
         {
             "name": "[parameters('registryName')]"
+
+              "dependsOn": [],
+            "tags": "[parameters('tags')]",
+            "properties": {
+                "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
+                "zoneRedundancy": "[parameters('zoneRedundancy')]"
+            }
         }  
    ]
 
