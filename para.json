@@ -30,6 +30,6 @@
         {
             "name": "[parameters('registryName')]"
         }  
-   ],
-    "outputs": {}
+   ]
+
 }
