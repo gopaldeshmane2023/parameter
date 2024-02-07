@@ -3,32 +3,26 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "registryName": {
-            "type": "string"
-            "value": "myregistry"
+            "type": "string""value": "myregistry"
         },
         "registryLocation": {
-            "type": "string"
-            "value": "centralus"
+            "type": "string""value": "centralus"
         },
         "zoneRedundancy": {
-            "type": "string"
-            "value": "disabled"
+            "type": "string""value": "disabled"
         },
         "registrySku": {
             "type": "string"
             "value": "Premium"
         },
         "registryApiVersion": {
-            "type": "string"
-            "value": "2022-02-01-preview"
+            "type": "string""value": "2022-02-01-preview"
         },
         "tags": {
-            "type": "object"
-            "value": {}
+            "type": "object""value": {}
         },
         "publicNetworkAccess": {
-            "type": "string"
-            "value": "Disabled"
+            "type": "string""value": "Disabled"
 
         }
     },
