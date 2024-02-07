@@ -3,8 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "registryName": {
-            "type": "string"
-            "value": {}
+            "value": "[parameters('registryName')]"
         },
         "registryLocation": {
             "value": "centralus"
@@ -25,19 +24,4 @@
             "value": "Disabled"
         }
     }
-
-
- "resources": [
-        {
-            "name": "[parameters('registryName')]"
-
-              "dependsOn": [],
-            "tags": "[parameters('tags')]",
-            "properties": {
-                "publicNetworkAccess": "[parameters('publicNetworkAccess')]",
-                "zoneRedundancy": "[parameters('zoneRedundancy')]"
-            }
-        }  
-   ]
-
 }
