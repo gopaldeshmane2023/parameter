@@ -3,7 +3,12 @@ name: Create Azure Container Registry with ARM Template
 on:
    push:
     branches: [ main ]  # Trigger on pushes to the main branch
-
+    paths:
+      - './para.json'
+    inputs:
+      acrName:
+        description: 'ACR Name'
+        required: true
 jobs:
   create-acr:
     runs-on: ubuntu-latest
@@ -21,4 +26,4 @@ jobs:
           template: "./registry.json"
           ResourceGroupName: "my-resource"
           #registryName: "testreg45"
-          parameters: ./para.json registryName=testreg45
+          parameters: ./para.json
