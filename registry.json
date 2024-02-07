@@ -23,7 +23,6 @@
     },
     "resources": [
         {
-            "name": "[parameters('registryName')]",
             "type": "Microsoft.ContainerRegistry/registries",
             "location": "[parameters('registryLocation')]",
             "apiVersion": "[parameters('registryApiVersion')]",
