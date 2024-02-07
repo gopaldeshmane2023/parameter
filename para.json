@@ -4,6 +4,7 @@
     "parameters": {
         "registryName": {
             "type": "string"
+            "value": ""
         },
         "registryLocation": {
             "value": "centralus"
