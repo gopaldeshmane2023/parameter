@@ -7,7 +7,7 @@ on:
         type: string
         required: true
        ACRLocation:
-         description: ACR Name
+         description: ACR Location
          type: string
          required: true
 jobs:
