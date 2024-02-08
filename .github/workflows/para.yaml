@@ -6,6 +6,10 @@ on:
         description: ACR Name
         type: string
         required: true
+       ACRLocation:
+         description: ACR Name
+         type: string
+         required: true
 jobs:
   create-acr:
     runs-on: ubuntu-latest
@@ -22,4 +26,4 @@ jobs:
           subscriptionId: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
           template: "./registry.json"
           ResourceGroupName: "my-resource" 
-          parameters: ./para.json registryName=${{ inputs.ACRName }}
+          parameters: ./para.json registryName=${{ inputs.ACRName }} registryLocation=${{ inputs.ACRLocation }}
