@@ -3,9 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": { 
        
-        "registryName": {
-            "value": "${{ github.event.inputs.ACRName }}"
-        },
+       
         "registryLocation": {
             "value": "centralus"
         },
