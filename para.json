@@ -8,7 +8,7 @@
         },
        
         "registryLocation": {
-            "value": "centralus"
+            "value": "${{ github.event.inputs.ACRLocation }}"
         },
         "zoneRedundancy": {
             "value": "disabled"
