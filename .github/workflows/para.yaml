@@ -16,7 +16,7 @@ on:
          required: true
        tags:
          description: Tags
-         type: string
+         type: object
          required: false
          
       
