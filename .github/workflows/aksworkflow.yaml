@@ -1,6 +1,7 @@
 name: Create Azure Kubernetes Cluster with ARM Templates
 on:
-  workflow_dispatch:
+  push:
+    branches: [ aks-branch ] 
   
 jobs:
   create-aks:
