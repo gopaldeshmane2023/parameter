@@ -1,0 +1,21 @@
+name: Create Azure Kubernetes Cluster with ARM Templates
+on:
+  workflow_dispatch:
+  
+jobs:
+  create-aks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Login to Azure
+        uses: azure/login@v1.6.1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+      - name: Deploy aks with ARM Template
+        uses: azure/arm-deploy@v1.0.9
+        with:
+          subscriptionId: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+          template: "./aks-cluster.json"
+          ResourceGroupName: "my-resource" 
+          parameters: ./parameter-aks.json
