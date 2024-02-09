@@ -619,7 +619,7 @@
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2021-04-01",
             "dependsOn": [
-                "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/Znode-10-devops/providers/Microsoft.ContainerService/managedClusters/my-aks-cluster",
+                "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/my-resource/providers/Microsoft.ContainerService/managedClusters/my-aks-cluster",
                 "[concat('Microsoft.Resources/deployments/', 'InsightsActionGroupDepl-0d21fecc-9d2a-c36a-2290-04205c867ebd')]"
             ],
             "properties": {
@@ -637,7 +637,7 @@
                                 "severity": 3,
                                 "enabled": true,
                                 "scopes": [
-                                    "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/Znode-10-devops/providers/Microsoft.ContainerService/managedClusters/my-aks-cluster"
+                                    "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/my-resource/providers/Microsoft.ContainerService/managedClusters/my-aks-cluster"
                                 ],
                                 "evaluationFrequency": "PT5M",
                                 "windowSize": "PT5M",
@@ -673,7 +673,7 @@
                                 "severity": 3,
                                 "enabled": true,
                                 "scopes": [
-                                    "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/Znode-10-devops/providers/Microsoft.ContainerService/managedClusters/my-aks-cluster"
+                                    "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/my-resource/providers/Microsoft.ContainerService/managedClusters/my-aks-cluster"
                                 ],
                                 "evaluationFrequency": "PT5M",
                                 "windowSize": "PT5M",
@@ -802,7 +802,7 @@
                 }
             },
             "subscriptionId": "76fb35f4-98a6-450b-acd0-45da91fc82b4",
-            "resourceGroup": "Znode-10-devops",
+            "resourceGroup": "my-resource",
             "dependsOn": [
                 "[concat('Microsoft.ContainerService/managedClusters/', parameters('resourceName'))]"
             ]
@@ -824,7 +824,7 @@
                             "apiVersion": "2022-06-01",
                             "kind": "Linux",
                             "properties": {
-                                "dataCollectionEndpointId": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourceGroups/Znode-10-devops/providers/Microsoft.Insights/dataCollectionEndpoints/MSProm-eastus-my-aks-cluster",
+                                "dataCollectionEndpointId": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourceGroups/my-resource/providers/Microsoft.Insights/dataCollectionEndpoints/MSProm-eastus-my-aks-cluster",
                                 "dataSources": {
                                     "prometheusForwarder": [
                                         {
@@ -863,7 +863,7 @@
                 "Microsoft.Resources/deployments/CreatePromDCE-20240206170720-44"
             ],
             "subscriptionId": "76fb35f4-98a6-450b-acd0-45da91fc82b4",
-            "resourceGroup": "Znode-10-devops"
+            "resourceGroup": "my-resource"
         },
         {
             "type": "Microsoft.Resources/deployments",
@@ -884,23 +884,23 @@
                             "apiVersion": "2022-06-01",
                             "properties": {
                                 "description": "Association of data collection rule. Deleting this association will break the prometheus metrics data collection for this AKS Cluster.",
-                                "dataCollectionRuleId": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/Znode-10-devops/providers/Microsoft.Insights/dataCollectionRules/MSProm-eastus-my-aks-cluster"
+                                "dataCollectionRuleId": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/my-resource/providers/Microsoft.Insights/dataCollectionRules/MSProm-eastus-my-aks-cluster"
                             },
-                            "id": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/znode-10-devops/providers/microsoft.containerservice/managedclusters/my-aks-cluster/providers/Microsoft.Insights/dataCollectionRuleAssociations/ContainerInsightsMetricsExtension",
-                            "scope": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/znode-10-devops/providers/microsoft.containerservice/managedclusters/my-aks-cluster"
+                            "id": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/my-resource/providers/microsoft.containerservice/managedclusters/my-aks-cluster/providers/Microsoft.Insights/dataCollectionRuleAssociations/ContainerInsightsMetricsExtension",
+                            "scope": "/subscriptions/76fb35f4-98a6-450b-acd0-45da91fc82b4/resourcegroups/my-resource/providers/microsoft.containerservice/managedclusters/my-aks-cluster"
                         }
                     ]
                 }
             },
             "subscriptionId": "76fb35f4-98a6-450b-acd0-45da91fc82b4",
-            "resourceGroup": "Znode-10-devops"
+            "resourceGroup": "my-resource"
         },
         {
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-05-01",
             "name": "CreatePromRecordingRules-20240206170720-45",
             "subscriptionId": "76fb35f4-98a6-450b-acd0-45da91fc82b4",
-            "resourceGroup": "Znode-10-devops",
+            "resourceGroup": "my-resource",
             "properties": {
                 "mode": "Incremental",
                 "template": {
@@ -1342,7 +1342,7 @@
                 }
             },
             "subscriptionId": "76fb35f4-98a6-450b-acd0-45da91fc82b4",
-            "resourceGroup": "Znode-10-devops"
+            "resourceGroup": "my-resource"
         }
     ],
     "outputs": {
