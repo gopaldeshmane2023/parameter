@@ -14,11 +14,7 @@ on:
          description: ACR Sku
          type: string
          required: true
-       tags:
-         description: Tags
-         type: object
-         required: false
-         
+    
       
 jobs:
   create-acr:
