@@ -14,7 +14,7 @@
             "value": "disabled"
         },
         "registrySku": {
-            "value": "Premium"
+            "value": "${{ github.event.inputs.ACRstandard }}"
         },
         "registryApiVersion": {
             "value": "2022-02-01-preview"
