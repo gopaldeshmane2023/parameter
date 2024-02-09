@@ -14,7 +14,7 @@
             "value": "disabled"
         },
         "registrySku": {
-            "value": "${{ github.event.inputs.ACRstandard }}"
+            "value": "${{ github.event.inputs.ACRStandard }}"
         },
         "registryApiVersion": {
             "value": "2022-02-01-preview"
