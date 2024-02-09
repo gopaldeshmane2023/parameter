@@ -11,7 +11,7 @@ on:
          type: string
          required: true
        ACRStandard:
-         description: ACR Standerd
+         description: ACR Standard
          type: string
          required: true
          
