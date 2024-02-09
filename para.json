@@ -23,7 +23,7 @@
             "value": {}
         },
         "publicNetworkAccess": {
-            "value": ${{ github.event.inputs.ACRPublicAccess }}"
+            "value": "${{ github.event.inputs.ACRPublicAccess }}"
         }
     }
 }
