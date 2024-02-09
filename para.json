@@ -20,7 +20,7 @@
             "value": "2022-02-01-preview"
         },
         "tags": {
-            "value": "${{ github.event.inputs.tags }}"
+            "value": {}
         },
         "publicNetworkAccess": {
             "value": "Disabled"
