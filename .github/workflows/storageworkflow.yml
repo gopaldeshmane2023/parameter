@@ -1,0 +1,24 @@
+name: Create Azure Storage with ARM Template
+
+on:
+   push:
+    branches: [ main ]  # Trigger on pushes to the main branch
+
+jobs:
+  create-acr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Login to Azure
+        uses: azure/login@v1.6.1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+      - name: Deploy ACR with ARM Template
+        uses: azure/arm-deploy@v1.0.9
+        with:
+          subscriptionId: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+          template: "./storage.json"
+          ResourceGroupName: "aks-resource-group"
+          #registryName: "testreg45"
+          parameters: ./parastorage.json
