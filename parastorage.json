@@ -13,27 +13,27 @@
         },
          "accessTier": {
          "value": "Hot"
-       },
-        "fileShareName": {
-        "value": "myshare"
-       },
-       "folder1Name": {
-       "value": "folder1"
-      },
-       "folder2Name": {
-       "value": "folder2"
-      },
-      "folder3Name": {
-      "value": "folder3"
-     },
-     "folder4Name": {
-      "value": "folder4"
-    },
-        "kind": {
-            "value": "StorageV2"
         },
-        "minimumTlsVersion": {
-            "value": "TLS1_2"
+         "fileShareName": {
+         "value": "myshare"
+        },
+         "folder1Name": {
+         "value": "folder1"
+        },
+         "folder2Name": {
+         "value": "folder2"
+        },
+         "folder3Name": {
+         "value": "folder3"
+        },
+         "folder4Name": {
+         "value": "folder4"
+        },
+         "kind": {
+         "value": "StorageV2"
+        },
+         "minimumTlsVersion": {
+         "value": "TLS1_2"
         },
         "supportsHttpsTrafficOnly": {
             "value": true
